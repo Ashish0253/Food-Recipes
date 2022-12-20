@@ -523,6 +523,30 @@ video {
   margin-top: 2rem;
 }
 
+.ml-2{
+  margin-left: 0.5rem;
+}
+
+.flex{
+  display: flex;
+}
+
+.justify-end{
+  justify-content: flex-end;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
+.justify-between{
+  justify-content: space-between;
+}
+
+.justify-around{
+  justify-content: space-around;
+}
+
 .border-b{
   border-bottom-width: 1px;
 }
@@ -599,4 +623,10 @@ video {
 .text-primary{
   --tw-text-opacity: 1;
   color: rgb(255 99 99 / var(--tw-text-opacity));
+}
+
+@media (min-width: 768px){
+  .md\:justify-end{
+    justify-content: flex-end;
+  }
 }
