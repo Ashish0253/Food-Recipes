@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body class="text-gray-600 font-body">
-    <div>
+    <div class="grid md:grid-cols-3">
       <!-- content wrapper -->
-      <div>
+      <div class="md:col-span-1">
         <!-- start of nav -->
         <nav>
           <div>
@@ -38,10 +38,16 @@
       </div>
       <!-- end of nav -->
 
-      <main class="px-16 py-6">
+      <main class="px-16 py-6 bg-gray-100 md:col-span-2">
         <div class="flex justify-center md:justify-end">
-          <a href="#" class="text-primary">Login</a>
-          <a href="#" class="text-primary ml-2">Signup</a>
+          <a href="#" class="button text-primary border-primary md:border-2"
+            >Login</a
+          >
+          <a
+            href="#"
+            class="button text-primary ml-2 border-primary md:border-2"
+            >Signup</a
+          >
         </div>
 
         <header>
@@ -54,15 +60,53 @@
             Latest Recipes
           </h4>
 
-          <div class="mt-8">
+          <div class="mt-8 grid md:grid-cols-3 gap-5">
             <!-- card goes here -->
-            <div>
-              <img src="./imgs/bhattKiDaal.jpg" alt="bhattKiDaal" />
-              <div>
-                <span>Bhatt ki Daal</span>
-                <span>Recipe By Mummy</span>
+            <div class="card">
+              <img
+                src="./imgs/Grilled Chicken.webp"
+                alt="Grilled Chicken"
+                class="w-full h-32 sm:h-48 object-cover"
+              />
+              <div class="m-4">
+                <span class="font-bold">Grilled Chicken</span>
+                <span class="block text-gray-500 text-sm">Net se tepi</span>
+              </div>
+              <div class="timeBadge">
+                <span>25 mins</span>
               </div>
             </div>
+
+            <div class="card">
+              <img
+                src="./imgs/mutton curry.jpg"
+                alt="Mutton Curry"
+                class="w-full h-32 sm:h-48 object-cover"
+              />
+              <div class="m-4">
+                <span class="font-bold">Mutton Curry</span>
+                <span class="block text-gray-500 text-sm">Papa ki Recipe</span>
+              </div>
+              <div class="timeBadge">
+                <span>45 mins</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <img
+                src="./imgs/chicken curry.jpg"
+                alt="Chicken Curry"
+                class="w-full h-32 sm:h-48 object-cover"
+              />
+              <div class="m-4">
+                <span class="font-bold">Chcicken Curry</span>
+                <span class="block text-gray-500 text-sm">Indian Recipe</span>
+              </div>
+              <div class="timeBadge">
+                <span>30 mins</span>
+              </div>
+            </div>
+            <!-- cards end here -->
           </div>
 
           <h4 class="font-bold mt-12 pb-2 border-b border-gray-200">
@@ -74,7 +118,7 @@
           </div>
 
           <div class="flex justify-center">
-            <div class="bg-secondary-100">Load More</div>
+            <div class="button bg-secondary-100">Load More</div>
           </div>
         </div>
       </main>
